@@ -1,8 +1,8 @@
 title: notes-test
 description: I want to write it down, and for it to be pretty.
-baseurl: "/notes-test"
+baseurl: "/notes_test"
 url: ""
-repository: axmanmuscle/notes-jekyll
+repository: axmanmuscle/notes_test
 paginate: 28
 
 banner: "/assets/img/banner.png" # site banner (load when someone share your page url)

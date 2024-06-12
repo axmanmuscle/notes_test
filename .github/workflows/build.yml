@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -43,5 +45,5 @@ jobs:
         rm -rf .jekyll-cache
         [[ -n "$(git status --porcelain)" ]] || exit 0
         git add .
-        git commit -m "Build $(git rev-parse source | grep -o '^.\{10\}')"
+        git commit -m "New build."
         git push origin "${BRANCH}" --force

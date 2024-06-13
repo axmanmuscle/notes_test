@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=vietnamese" rel="stylesheet">
+  <meta name="google-site-verification" content="8zqeFQNuNAWS7ye6oN69hdEeYC_RsDyAlhht79xtAQo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="/notes_test/assets/img/banner.png" />
+
+  
+
+  <title>
+    
+      Building This Website | notes_test
+    
+  </title>
+
+  
+    <script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
+  
+
+  <!-- page's cover -->
+  
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1234">
+    <meta property="og:image:height" content="592">
+  
+
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  
+
+  <link rel="shortcut icon" type="image/x-icon" href="/notes_test/assets/img/favicon.ico">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/notes_test/assets/css/main.css">
+  <link rel="stylesheet" href="/notes_test/assets/css/thi_scss.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+  
+    
+      <link rel="stylesheet" href="/notes_test/assets/css/post.css">
+    
+  
+
+  
+
+  <link rel="stylesheet" href="/notes_test/assets/css/syntax.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/notes_test/feed.xml">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/notes_test/sitemap.xml">
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Building This Website" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Github Pages I built this website using the Github Pages feature. The theme itself is taken from this template There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included build.yml in the repo but I needed to add in the following lines: permissions: contents: write under the build job. This gives the Github bot permission to push the pages into the repo, or something like that." />
+<meta property="og:description" content="Github Pages I built this website using the Github Pages feature. The theme itself is taken from this template There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included build.yml in the repo but I needed to add in the following lines: permissions: contents: write under the build job. This gives the Github bot permission to push the pages into the repo, or something like that." />
+<link rel="canonical" href="/notes_test/building-this-website" />
+<meta property="og:url" content="/notes_test/building-this-website" />
+<meta property="og:site_name" content="notes_test" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-06-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Building This Website" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-11T00:00:00+00:00","datePublished":"2024-06-11T00:00:00+00:00","description":"Github Pages I built this website using the Github Pages feature. The theme itself is taken from this template There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included build.yml in the repo but I needed to add in the following lines: permissions: contents: write under the build job. This gives the Github bot permission to push the pages into the repo, or something like that.","headline":"Building This Website","mainEntityOfPage":{"@type":"WebPage","@id":"/notes_test/building-this-website"},"url":"/notes_test/building-this-website"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+	<header>
+  
+    <div class="container">
+  <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+    <i class="material-icons">menu</i>
+  </a>
+</div>
+<div id="slide-out" class="side-nav fixed">
+  <div>
+    <div class="userView thi-userView">
+      <div class="background"></div>
+        <a href="/notes_test/">
+          <img style="display:inherit;" class="circle z-depth-2" src="/notes_test/assets/img/napkins.png">
+        </a>
+      <span style="font-size: larger;" class="white-text name">axmanmuscle/notes_test</span>
+      <span class="white-text email"><a style="color: #bdbdbd;" href="https://github.com/axmanmuscle/notes_test"></a></span>
+    </div>
+  </div>
+  <div style="padding: 10px;">
+    <form action="/notes_test/search" method="get">
+      <input class="search-sidebar" type="search" name="q"  placeholder="search something?" autofocus>
+      <input type="submit" value="Search" style="display: none;">
+    </form>
+  </div>
+  <div id="toc-bar">
+    <div class="toc-bar-title">
+      In this post
+    </div>
+    <ol id="toc-sidebar">
+  <li><a href="#github-pages">Github Pages</a></li>
+</ol>
+  </div>
+</div>
+
+  
+</header>
+<main>
+  <div class="container">
+    <div id="post-info">
+      <h3>Building This Website</h3>
+      <span>
+        Posted on
+        <span style="display: initial;" class="cat-class">11/06/2024</span>
+        
+          
+          
+        
+      </span>
+    </div>
+
+    <div class="divider"></div>
+    <div class="row thi-post">
+      <div class="col s12">
+        <h2 id="github-pages">Github Pages</h2>
+<p>I built this website using the Github Pages feature. The theme itself is taken from <a href="https://github.com/vsoch/notes-jekyll">this template</a>
+There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included <code class="language-plaintext highlighter-rouge">build.yml</code> in the repo but I needed to add in the following lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>permissions:
+  contents: write
+</code></pre></div></div>
+<p>under the build job. This gives the Github bot permission to push the pages into the repo, or something like that.</p>
+
+<p>Another change I had to make was getting rid of this line:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "Build $(git rev-parse source | grep -o '^.\{10\}')"
+</code></pre></div></div>
+<p>Something about that <code class="language-plaintext highlighter-rouge">git rev-parse source</code> would break. It gave message:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fatal: ambiguous argument 'source': unknown revision or path not in the working tree.
+</code></pre></div></div>
+<p>It’s unclear what this was trying to accomplish (I think it was trying to automatically update the build number but I’m not sure from what).</p>
+
+<p>It looks like I have to manually create a <code class="language-plaintext highlighter-rouge">gh-pages</code> branch, since that’s what the deploy command seems to be looking for.</p>
+
+<p>Okay actually what the hell is this build file doing. This makes no sense. Need to look up workflow stuff in the morning.</p>
+
+<p>Another massive problem I just saw is that all the links so far are to <code class="language-plaintext highlighter-rouge">/notes-jekyll/</code> mirroring the repository name from the creator. Our repo is just named <code class="language-plaintext highlighter-rouge">/notes/</code> so this will cause issues. Figure out how to fix.</p>
+
+<p>I’d bet some stuff has changed with actions since this was written. Go read the documentation for GitHub actions and see if you can fix.</p>
+
+      </div>
+    </div>
+
+    <div class="tag-list">
+      
+      
+      
+      <a class="tag-chip" href="/notes_test/tags#general"><div class="chip z-depth-1">general</div></a>
+      
+    </div>
+    <style type="text/css">
+.related-posts{
+  border: 3px dotted #2e87e7;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 10px 0 10px;
+}
+.related-posts span{
+  font-size: 130%;
+  font-weight: 500;
+  color: #2e87e7;
+}
+.related-posts ul{
+  margin-top: 5px!important;
+}
+.thi-icon{
+  float: left;
+  line-height: inherit;
+  margin-right: 5px;
+  margin-left: 2px;
+  color: #2e87e7;
+}
+</style>
+
+<div class="related-posts">
+  <i class="material-icons thi-icon">grade</i><span>Related Notes</span>
+  
+  <ul>
+    
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+
+    
+    
+      
+        
+
+        
+        
+          
+        
+        
+          
+          <li>
+            <a href="/notes_test/optimization-introduction">
+                Intro and To Do
+            </a>
+            <small>11 Jun 2024</small>
+          </li>
+        
+      
+        
+
+        
+        
+          
+        
+        
+          
+          <li>
+            <a href="/notes_test/linear-algebra">
+                Linear Algebra
+            </a>
+            <small>11 Jun 2024</small>
+          </li>
+        
+      
+        
+
+        
+        
+          
+        
+        
+          
+          <li>
+            <a href="/notes_test/how-to-write-notes">
+                How to write notes
+            </a>
+            <small>27 Nov 2020</small>
+          </li>
+        
+      
+        
+
+        
+        
+          
+        
+        
+          
+          <li>
+            <a href="/notes_test/registration">
+                Registration
+            </a>
+            <small>27 Nov 2020</small>
+          </li>
+        
+      
+    
+  </ul>
+</div>
+
+    <form action="/notes_test/search" method="get">
+	<input type="search" name="q"  placeholder="Search for..." autofocus>
+	<input type="submit" value="Search" style="display: none;">
+</form>
+
+  </div>
+</main>
+
+	<script src="/notes_test/assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+      //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+      offset_opacity = 1200,
+      //duration of the top scrolling animation (in ms)
+      scroll_top_duration = 700,
+      //grab the "back to top" link
+      $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+      ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+      // if( $(this).scrollTop() > offset_opacity ) { 
+      //  $back_to_top.addClass('cd-fade-out');
+      // }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+      event.preventDefault();
+      $('body,html').animate({
+        scrollTop: 0 ,
+        }, scroll_top_duration
+      );
+    });
+
+  });
+</script>
+<style type="text/css">
+.cd-top {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #bbb url(/notes_test/assets/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+</style>
+
+<a href="#0" class="cd-top">Top</a>
+
+	<footer class="page-footer teal">
+  <div class="footer-copyright">
+    <div class="container text-white">
+          <a class="waves-effect" href="/notes_test/tags">Tags</a> | <a class="waves-effect" href="/notes_test/categories">Categories</a> | <a class="waves-effect" href="https://github.com/axmanmuscle/notes_test">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+
+  
+    <script src="/notes_test/assets/js/post.js"></script>
+  
+
+
+
+<script src="/notes_test/assets/js/main.js"></script>
+
+</body>
+</html>

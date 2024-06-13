@@ -1,24 +1,65 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
+    <title>notes_test</title>
+    <description>I want to write it down, and for it to be pretty.</description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>Intro and To Do</title>
         <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+          
+          Let’s make a to-do list of what we want to do here. Introduction I’d really love to spend some time actually writing out optimization notes. This will help my own writing be more clear and serve as a resource to look back on (besides just generally being a good thing...
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+        <link>/optimization-introduction</link>
+        <guid isPermaLink="true">/optimization-introduction</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Linear Algebra</title>
+        <description>
+          
+          Introduction This will serve as a small refresher about some linear algebra topics that will be useful later. Vectors A vector, as we know, is a collection of elements that has a direction and a magnitude. The most common case for this is a vector in $\mathbb{R}^n$, the n-dimensional real...
+        </description>
+        <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+        <link>/linear-algebra</link>
+        <guid isPermaLink="true">/linear-algebra</guid>
+      </item>
+    
+      <item>
+        <title>Building This Website</title>
+        <description>
+          
+          Github Pages I built this website using the Github Pages feature. The theme itself is taken from this template There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included...
+        </description>
+        <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+        <link>/building-this-website</link>
+        <guid isPermaLink="true">/building-this-website</guid>
+      </item>
+    
+      <item>
+        <title>How to write notes</title>
+        <description>
+          
+          tocIn this post Front Matter Code Syntax highlighting Keyboard Insert a figure Standard Inline Insert an video from Youtube For writing posts Remove heading numbering Manually assign an id for a heading Insert toc (Table of Contents) Make a list into columns Insert a read-more link Insert steps Mathematical expressions...
+        </description>
+        <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+        <link>/how-to-write-notes</link>
+        <guid isPermaLink="true">/how-to-write-notes</guid>
+      </item>
+    
+      <item>
+        <title>Registration</title>
+        <description>
+          
+          tocIn this post Section I Sub Section A Sub Section B Section II Section I Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis. Leo vel orci porta non pulvinar neque laoreet....
+        </description>
+        <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+        <link>/registration</link>
+        <guid isPermaLink="true">/registration</guid>
+      </item>
+    
   </channel>
 </rss>

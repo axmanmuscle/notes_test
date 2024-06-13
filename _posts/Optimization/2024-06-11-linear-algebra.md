@@ -1,4 +1,11 @@
-
+---
+title: Linear Algebra
+categories: [optimization]
+tags: [optimization]
+datacamp: 1
+maths: 1
+toc: 1
+---
 # Introduction
 This will serve as a small refresher about some linear algebra topics that will be useful later. 
 

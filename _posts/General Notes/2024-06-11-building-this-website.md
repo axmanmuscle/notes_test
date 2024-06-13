@@ -1,3 +1,12 @@
+---
+title: Building This Website
+categories: [website]
+tags: [general]
+datacamp: 1
+maths: 1
+toc: 1
+---
+
 ## Github Pages
 I built this website using the Github Pages feature. The theme itself is taken from [this template](https://github.com/vsoch/notes-jekyll)
 There were some hurdles I had to overcome once I cloned the repo, and most of them had to do with building the website via Github actions. I used the included `build.yml` in the repo but I needed to add in the following lines:

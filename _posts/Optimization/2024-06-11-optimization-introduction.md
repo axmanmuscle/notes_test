@@ -1,3 +1,12 @@
+---
+title: Intro and To Do
+categories: [optimization]
+tags: [optimization]
+datacamp: 1
+maths: 1
+toc: 1
+---
+
 Let's make a to-do list of what we want to do here.
 
 ## Introduction
